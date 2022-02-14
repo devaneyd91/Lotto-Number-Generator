@@ -37,7 +37,6 @@ def euromillions():
             number = gen_euro()
             while number in euroMillions:
                 number = gen_euro()     
-           
             euroMillions.append(number)
             count += 1
            
@@ -51,7 +50,6 @@ def euromillions():
             number = gen_euro()
             while number in luckyStars or number > 12:
                 number = gen_euro()     
-           
             luckyStars.append(number)
             count += 1   
 
@@ -59,6 +57,6 @@ def euromillions():
             luckyStars.sort()
             count = 0
             break    
-    result = str(euroMillions) + "Lucky Stars: " + str(luckyStars)
+    result = str(euroMillions) + " Lucky Stars: " + str(luckyStars)
    
     return result
